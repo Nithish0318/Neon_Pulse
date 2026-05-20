@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Pulse | Synthwave Escape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="ui-layer">
+            <div id="score-card" class="glass-panel">
+                <span class="label">SCORE</span>
+                <span id="score-value">0000</span>
+            </div>
+
+            <div id="start-screen" class="overlay">
+                <h1 class="title">NEON <span class="accent">PULSE</span></h1>
+                <p class="description">Navigate the void. Survive the rhythm.</p>
+                <button id="start-btn" class="primary-btn">INITIALIZE</button>
+                <p class="controls">Use <span class="key">WASD</span> or <span class="key">ARROWS</span> to move</p>
+            </div>
+
+            <div id="game-over-screen" class="overlay hidden">
+                <h2 class="title">SYSTEM <span class="critical">FAILURE</span></h2>
+                <div id="final-score-box" class="glass-panel">
+                    <span class="label">FINAL SCORE</span>
+                    <span id="final-score-value">0</span>
+                </div>
+                <button id="retry-btn" class="primary-btn">REBOOT</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
